@@ -7,10 +7,10 @@ export default function TherapySection() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Text Section */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-bold text-[#B285C0] mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#6f145f] mb-6">
             DEE PLUS Therapy
           </h2>
-          <p className="text-gray-800 leading-relaxed">
+          <p className="text-gray-950 leading-relaxed">
             Therapy is a process where a person works with a trained
             professional to explore thoughts, feelings, and behaviors in order
             to improve mental health, cope with challenges, and promote personal

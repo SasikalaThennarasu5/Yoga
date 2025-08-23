@@ -10,7 +10,7 @@ export default function About() {
     <section className="w-full bg-[#feeeee] py-12 px-4 sm:px-8 md:px-16 font-robotoSerif">
       {/* Heading */}
       <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold mb-10">
-        About <span className="text-[#B285C0]">DEE PLUS</span>
+        About <span className="text-[#6f145f]">DEE PLUS</span>
       </h2>
 
       <div className="max-w-5xl mx-auto space-y-12">
@@ -22,8 +22,8 @@ export default function About() {
             className="w-full md:w-1/3 rounded-md shadow-md"
           />
           <div className="flex-1 text-gray-950 text-2xl">
-            <h3 className="font-semibold mb-2 text-center">Our Mission</h3>
-            <p className="text-xl font-normal leading-relaxed">
+            <h3 className="font-semibold mb-2 text-center text-[#6f145f]">Our Mission</h3>
+            <p className="text-xl font-medium  leading-relaxed">
               Our mission is to provide a valuable resource of information and
               downloads to people who want to evolve mentally, emotionally and
               spiritually, and to help people become healthier, happier and more
@@ -40,8 +40,8 @@ export default function About() {
             className="w-28 h-28 object-cover rounded-full shadow-md"
           />
           <div className="flex-1 text-center md:text-left text-gray-950 text-2xl">
-            <h3 className="font-semibold mb-2 text-center">Who we are</h3>
-            <p className="text-xl font-normal leading-relaxed">
+            <h3 className="font-semibold mb-2 text-[#6f145f] text-center">Who we are</h3>
+            <p className="text-xl font-medium leading-relaxed">
               Think of DEE PLUS as your lifelong guide to better mental health.
               We’re here for you whenever you need us, wherever you are, helping
               you get through tough times and find joy in every day.
@@ -57,8 +57,8 @@ export default function About() {
             className="w-28 h-28 object-cover rounded-full shadow-md"
           />
           <div className="flex-1 text-center md:text-left text-gray-950 text-2xl">
-            <h3 className="font-semibold mb-2 text-center">What we do</h3>
-            <p className="text-xl font-normal leading-relaxed">
+            <h3 className="font-semibold mb-2 text-[#6f145f] text-center">What we do</h3>
+            <p className="text-xl font-medium leading-relaxed">
               Through evidence-based meditation and mindfulness tools, mental
               health coaching, therapy, psychiatry, Headspace helps you create
               life-changing habits to support your mental health and find a
@@ -75,8 +75,8 @@ export default function About() {
             className="w-28 h-28 object-cover rounded-full shadow-md"
           />
           <div className="flex-1 text-center md:text-left text-gray-950 text-2xl">
-            <h3 className="font-semibold mb-2 text-center">How we do it</h3>
-            <p className="text-xl font-normal leading-relaxed">
+            <h3 className="font-semibold mb-2 text-[#6f145f] text-center">How we do it</h3>
+            <p className="text-xl font-medium leading-relaxed">
               Our four values inform our decisions and how we operate
               day-to-day: put members first; bring a beginner's mind; seek
               truth, speak truth; embrace ownership.

@@ -66,8 +66,8 @@ export default function OurTeam() {
     <section id="our-team" className="py-16 bg-[#feeeee] font-robotoSerif">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 text-center relative">
         {/* Section Title */}
-        <p className="text-gray-700 text-lg">Meet Our Therapist</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#6B2C91] mb-10">
+        <p className="text-gray-950 font-medium text-lg">Meet Our Therapist</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#6f145f] mb-10">
           Our Team
         </h2>
 
@@ -85,7 +85,7 @@ export default function OurTeam() {
                   <h3 className="text-lg font-bold text-black">
                     {member.name}
                   </h3>
-                  <p className="text-gray-700 text-sm">{member.role}</p>
+                  <p className="text-gray-950 text-lg">{member.role}</p>
                 </div>
               </div>
             ))}

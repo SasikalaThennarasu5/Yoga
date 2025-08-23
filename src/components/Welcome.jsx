@@ -24,11 +24,11 @@ export default function Welcome() {
 
           {/* Right Content */}
           <div>
-            <p className="text-gray-600 text-lg">Welcome To</p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#B285C0] mb-4">
+            <p className="text-gray-950 font-medium text-lg">Welcome To</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#6f145f] mb-4">
               Private Psychiatry <br /> & Therapy Clinic
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-950 text-xl font-medium leading-relaxed mb-6">
               A specialized healthcare facility offering confidential,
               personalized mental health services, including psychiatric
               evaluations, medication management, and psychotherapy. Designed to

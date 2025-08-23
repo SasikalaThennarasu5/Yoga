@@ -1,8 +1,18 @@
 // src/components/ContactUs.jsx
-import React from "react";
+import React, { useState } from "react";
 import contactImg from "../assets/images/contact.jpg"; // meditation image
 
 export default function ContactUs() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevent page reload
+    setSubmitted(true);
+
+    // Optionally clear after a few seconds
+    setTimeout(() => setSubmitted(false), 4000);
+  };
+
   return (
     <section className="w-full bg-[#feeeee] py-12 px-4 sm:px-8 md:px-16 font-robotoSerif text-black">
       {/* Image & Quote */}
@@ -16,7 +26,7 @@ export default function ContactUs() {
 
       {/* Contact Heading */}
       <h2 className="text-center text-lg sm:text-2xl font-bold mb-8">
-        Contact <span className="text-[#B285C0]">DEE PLUS</span>
+        Contact <span className="text-[#6f145f]">DEE PLUS</span>
       </h2>
 
       {/* Content */}
@@ -34,14 +44,13 @@ export default function ContactUs() {
           </p>
 
           <p>
-            <span className="font-bold">Mobile No:</span> +9532 32556
+            <span className="font-bold ">Mobile No:</span> +9532 32556
             <br />
-            <span className="font-bold">E-Mail Id:</span>{" "}
-            deepluswell@gmail.com
+            <span className="font-bold">E-Mail Id:</span> deepluswell@gmail.com
           </p>
 
           <p>
-            <span className="font-bold">General Enquirers</span>
+            <span className="font-bold">General Enquiries</span>
             <br />
             Got a general question?
             <br />
@@ -66,11 +75,11 @@ export default function ContactUs() {
         </div>
 
         {/* Right Section: Form */}
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 text-gray-950">
           <input
             type="text"
             placeholder="Name"
-            className="w-full border border-gray-950 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#B285C0]"
+            className="w-full border border-gray-950  rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#B285C0]"
           />
           <input
             type="text"
@@ -108,6 +117,13 @@ export default function ContactUs() {
           >
             Contact Us
           </button>
+
+          {/* Success Message */}
+          {submitted && (
+            <p className="mt-4 text-green-700 font-semibold">
+              ✅ Thank you! Your message has been received.
+            </p>
+          )}
         </form>
       </div>
     </section>

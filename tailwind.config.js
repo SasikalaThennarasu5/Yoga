@@ -12,6 +12,7 @@ export default {
       colors: {
         purpleMain: "#B285C0",
         siteBg: "#feeeee",
+        Heading: "#6f145f",
       },
     },
   },

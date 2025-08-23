@@ -38,11 +38,12 @@ export default function Testimonials() {
     setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="w-full py-16 px-4 sm:px-8 md:px-16 font-robotoSerif bg-gradient-to-b from-sky-100 to-green-100">
+    <section className="w-full py-16 px-4 sm:px-8 md:px-16 font-robotoSerif 
+  bg-gradient-to-b from-[#C9F1F9] via-[#E6FDE1] to-[#C6F6B0]">
       <div className="max-w-4xl mx-auto text-center relative">
         {/* Heading */}
-        <p className="text-gray-700 text-sm mb-2">Testimonials</p>
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#B285C0] mb-6">
+        <p className="text-gray-950 font-semibold text-xl mb-2">Testimonials</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#6f145f] mb-6">
           What Our Clients Says
         </h2>
 

@@ -28,8 +28,8 @@ const LatestArticles = () => {
   return (
     <section className="py-12 bg-#feeeee font-robotoSerif">
       <div className="text-center mb-10">
-        <p className="text-gray-500">From the Blog</p>
-        <h2 className="text-2xl font-bold text-purple-800">Latest Articles</h2>
+        <p className="text-gray-950 font-medium text-lg">From the Blog</p>
+        <h2 className="text-3xl font-bold text-[#6f145f]">Latest Articles</h2>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">

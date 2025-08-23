@@ -31,7 +31,7 @@ export default function Teachers() {
   return (
     <section className="bg-[#feeeee] py-12 px-4 md:px-8 lg:px-16 font-robotoSerif">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-10 text-gray-900">
-        Meet <span className="text-brandPurple">DEE PLUS</span> Teachers
+        Meet <span className="text-[#6f145f]">DEE PLUS</span> Teachers
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -49,8 +49,8 @@ export default function Teachers() {
                 className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <h3 className="font-bold text-lg mb-2">{teacher.name}</h3>
-            <p className="text-sm text-gray-700">{teacher.desc}</p>
+            <h3 className="font-bold text-[#6f145f] text-lg mb-2">{teacher.name}</h3>
+            <p className="text-sm font-medium text-gray-950">{teacher.desc}</p>
           </div>
         ))}
       </div>

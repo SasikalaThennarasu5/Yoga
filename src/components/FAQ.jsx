@@ -31,7 +31,7 @@ export default function FAQ() {
     <section className="py-16 bg-[#feeeee] font-robotoSerif">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#B285C0] text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#6f145f] text-center mb-10">
           FAQs
         </h2>
 
@@ -45,10 +45,10 @@ export default function FAQ() {
             >
               {/* Question */}
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-lg text-gray-800">
+                <h3 className="font-semibold text-xl text-gray-900">
                   {index + 1}. {faq.question}
                 </h3>
-                <span className="text-xl font-bold text-[#B285C0]">
+                <span className="text-3xl font-bold text-[#6f145f]">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </div>
@@ -62,7 +62,7 @@ export default function FAQ() {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="mt-3 text-gray-950 overflow-hidden"
+                    className="mt-3 text-gray-950 text-lg overflow-hidden"
                   >
                     {faq.answer}
                   </motion.p>
