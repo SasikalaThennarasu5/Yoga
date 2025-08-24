@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import local images
 import pascalImg from "../assets/images/pascal.png";
@@ -102,10 +103,13 @@ export default function FreeTrial() {
 
       {/* Free Trial Button */}
       <div className="text-center mt-8">
-        <button className="bg-black text-white px-8 py-3 rounded-full font-bold">
-          Get 14 Days Free Trial
-        </button>
-      </div>
+  <Link
+    to="/approach-form"   // <-- set the route path
+    className="bg-black text-white px-8 py-3 rounded-full font-bold inline-block"
+  >
+    Get 14 Days Free Trial
+  </Link>
+</div>
     </div>
   );
 }
