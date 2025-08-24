@@ -107,7 +107,7 @@ export default function Payment() {
             onClick={handlePayment}
             className="w-full mt-6 bg-[#6f145f] text-white py-2 font-bold rounded-none"
           >
-            Confirm Payment
+            Confirm Payment 
           </button>
         </div>
       </div>

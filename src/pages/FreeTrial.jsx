@@ -1,50 +1,57 @@
 import React from "react";
 
+// Import local images
+import pascalImg from "../assets/images/pascal.png";
+import alexisImg from "../assets/images/alexis.png";
+import sharonImg from "../assets/images/sharon.png";
+import josephImg from "../assets/images/joseph.png";
+import sebeneImg from "../assets/images/sebene.png";
+
 const meditations = [
   {
     id: 1,
     mentor: "Pascal Auclair",
     title: "Rediscover the Familiar",
     desc: "This is the first time you’ve ever been here, now. Pascal invites you to discover the vivid and mysterious experience of this new moment.",
-    img: "https://via.placeholder.com/100",
+    img: pascalImg,
     duration: "5:00",
-    audio: "/audio/rediscover.mp3",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
   },
   {
     id: 2,
     mentor: "Alexis Santos",
     title: "Natural mindful walking meditation",
     desc: "Taking a relaxed walk mindfully will soothe the nervous system, get you outside, and can refresh you mentally when you’re feeling low or off.",
-    img: "https://via.placeholder.com/100",
+    img: alexisImg,
     duration: "12:00",
-    audio: "/audio/walking.mp3",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
   },
   {
     id: 3,
     mentor: "Sharon Salzberg",
     title: "Being with Big Emotions",
     desc: "Bring an open minded curiosity to your big emotions and get to know yourself more fully, developing resilience to deal with all the feels.",
-    img: "https://via.placeholder.com/100",
+    img: sharonImg,
     duration: "9:50",
-    audio: "/audio/emotions.mp3",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
   },
   {
     id: 4,
     mentor: "Joseph Goldstein",
     title: "Balanced Compassion",
     desc: "We’re living in challenging times. Try practicing balance, letting you open to the suffering of the world without becoming overwhelmed.",
-    img: "https://via.placeholder.com/100",
+    img: josephImg,
     duration: "7:00",
-    audio: "/audio/compassion.mp3",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
   },
   {
     id: 5,
     mentor: "Sebene Selassie",
     title: "Self-kindness for stress",
     desc: "Showing self compassion to ourselves in hard times bolsters our resilience, so we can learn from setbacks rather than getting stuck in rumination.",
-    img: "https://via.placeholder.com/100",
+    img: sebeneImg,
     duration: "12:09",
-    audio: "/audio/selfkindness.mp3",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
   },
 ];
 
