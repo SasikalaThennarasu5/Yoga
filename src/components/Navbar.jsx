@@ -30,96 +30,33 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-[#B285C0] px-6 py-3 rounded-[50px] mx-2 lg:mx-8 mt-2 shadow-md">
-        <div className="flex items-center justify-between">
-          {/* Logo (scroll to top) */}
-          <div
-            className="flex items-center space-x-2 cursor-pointer"
-            onClick={scrollToTop}
-          >
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
-          </div>
+      <nav className="sticky top-0 z-50 bg-[#B285C0] px-8 py-5 rounded-[50px] mx-2 lg:mx-8 mt-2 shadow-lg">
+  <div className="flex items-center justify-between">
+    {/* Logo */}
+    <div
+      className="flex items-center space-x-2 cursor-pointer"
+      onClick={scrollToTop}
+    >
+      <img src={logo} alt="Logo" className="h-14 w-auto" /> {/* bigger logo */}
+    </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-10 font-robotoSerif text-white text-lg">
-            <Link to="/" className=" hover:text-[#6f145f] transition">
-              Home
-            </Link>
-            <Link to="/therapy" className="hover:text-[#6f145f] transition">
-              Therapy
-            </Link>
-            <Link to="/about" className="hover:text-[#6f145f] transition">
-              About Us
-            </Link>
-            <Link to="/meditation" className="hover:text-[#6f145f] transition">
-              Meditation
-            </Link>
-            <Link to="/contact" className="hover:text-[#6f145f] transition">
-              Contact Us
-            </Link>
-          </div>
+    {/* Desktop Menu */}
+    <div className="hidden md:flex space-x-12 font-robotoSerif text-white text-xl">
+      <Link to="/" className="hover:text-[#6f145f] transition">Home</Link>
+      <Link to="/therapy" className="hover:text-[#6f145f] transition">Therapy</Link>
+      <Link to="/about" className="hover:text-[#6f145f] transition">About Us</Link>
+      <Link to="/meditation" className="hover:text-[#6f145f] transition">Meditation</Link>
+      <Link to="/contact" className="hover:text-[#6f145f] transition">Contact Us</Link>
+    </div>
 
-          {/* Right Icons */}
-          <div className="hidden md:flex items-center space-x-6 text-white">
-            <Search className="cursor-pointer" />
-            <User className="cursor-pointer" />
-          </div>
+    {/* Right Icons */}
+    <div className="hidden md:flex items-center space-x-8 text-white text-xl">
+      <Search className="cursor-pointer" size={26} />
+      <User className="cursor-pointer" size={26} />
+    </div>
+  </div>
+</nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-
-        {/* Mobile Menu Dropdown */}
-        {isOpen && (
-          <div className="md:hidden mt-4 space-y-4 font-roboto text-white text-lg">
-            <Link
-              to="/"
-              className="block text-[#cde3b4] hover:text-white"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/therapy"
-              className="block hover:text-[#6f145f]"
-              onClick={() => setIsOpen(false)}
-            >
-              Therapy
-            </Link>
-            <Link
-              to="/about"
-              className="block hover:text-[#6f145f]"
-              onClick={() => setIsOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              to="/meditation"
-              className="block hover:text-[#6f145f]"
-              onClick={() => setIsOpen(false)}
-            >
-              Meditation
-            </Link>
-            <Link
-              to="/contact"
-              className="block hover:text-[#6f145f]"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact Us
-            </Link>
-
-            <div className="flex space-x-6 pt-4">
-              <Search className="cursor-pointer" />
-              <User className="cursor-pointer" />
-            </div>
-          </div>
-        )}
-      </nav>
 
       {/* Back-to-Top Button */}
       {showScroll && (
